@@ -40,33 +40,6 @@ termit en en "hold your horses cowboy !" -t
 => "hold your horses cowboy !" # and an english voice asks you to hold on
 ```
 
-### Learning language when committing to git
-
-Idea by [Nedomas](https://news.ycombinator.com/item?id=7545747). See and hear your messages translated to target lang every time you commit. You can do this two ways: overriding the `git` command, and using a post-commit hook in git.
-
-#### Override the `git` command (zsh only)
-
-In **~/.zshrc**
-
-```bash
-export LANG=es
-git(){[[ "$@" = commit\ -m* ]]&&termit en $LANG ${${@:$#}//./} -t;command git $@}
-```
-
-I am no shell ninja so if you know how to make it work in bash then please submit a PR.
-
-#### Using a post-commit hook
-
-Add a file named `post-commit` to your project's `.git/hooks` directory, with this in it:
-
-```bash
-termit en es "`git log -1 --pretty=format:'%s'`" -t
-```
-
-Remember to switch the languages according to your preference.
-
-If you want this to be in every one of your git repositories, see [this Stack Overflow answer](http://stackoverflow.com/a/8842663/249801).
-
 ## Language codes:
 
 To find all available language codes visit https://msdn.microsoft.com/en-us/library/hh456380.aspx
@@ -82,7 +55,7 @@ Download mpg123 binaries from '' and unzip in 'C:\mpg123'. Add 'C:\mpg123' in yo
 
 ## Status
 
-It was rewritten to work with [Bing Translator](https://www.bing.com/translator) . Thanks to [Ragnarson](https://ragnarson.com) for supporting it !
+It was rewritten to work with [Bing Translator](https://www.bing.com/translator) . 
 
 ## Disclaimer
 
