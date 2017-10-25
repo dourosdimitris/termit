@@ -1,6 +1,6 @@
 # Termit
 
-Termit is an easy way to translate stuff in your terminal. You can check out its node.js npm version [normit](https://github.com/pawurb/normit).
+Termit is an easy way to translate stuff in your terminal.
 
 ## Installation
 Download .zip and unzip.
