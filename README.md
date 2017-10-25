@@ -1,15 +1,13 @@
-# Termit [![Build Status](https://travis-ci.org/pawurb/termit.svg)](https://travis-ci.org/pawurb/termit) [![Gem Version](https://badge.fury.io/rb/termit.svg)](http://badge.fury.io/rb/termit) [![Coverage Status](https://coveralls.io/repos/pawurb/termit/badge.svg)](https://coveralls.io/r/pawurb/termit)
+# Termit
 
 Termit is an easy way to translate stuff in your terminal. You can check out its node.js npm version [normit](https://github.com/pawurb/normit).
 
 ## Installation
-```bash
-gem install termit
-```
+Download .zip and unzip.
 
 ## Usage
 ```bash
-termit 'source_language' 'target_language' 'text'
+bin/termit 'source_language' 'target_language' 'text'
 ```
 
 Example:
@@ -79,15 +77,8 @@ Works with Ruby 1.9.2 and higher.
 
 To use speech synthesis you need to have mpg123 installed.
 
-For Ubuntu:
-```bash
-sudo apt-get install mpg123
-```
-
-For MacOSX:
-```bash
-brew install mpg123
-```
+For Windows:
+Download mpg123 binaries from '' and unzip in 'C:\mpg123'. Add 'C:\mpg123' in your PATH and you are ready to go! 
 
 ## Status
 

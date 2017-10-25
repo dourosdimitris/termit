@@ -18,8 +18,13 @@ module Termit
     private
 
     def check_sound_player
-      unless system 'which mpg123 &> /dev/null'
-        display_player_error_and_quit
+      begin
+        check = system "where.exe mpg123"
+        if check == false then 
+          display_player_error_and_quit
+        end
+      rescue => e
+        puts e
       end
     end
   end

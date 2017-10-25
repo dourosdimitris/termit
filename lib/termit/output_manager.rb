@@ -9,6 +9,8 @@ module Termit
     def display_player_error_and_quit
       message = "TERMIT: speech synthesis requires mpg123 installed."
       case Gem::Platform.local.os
+      when "mingw32"
+        message << "\nPlease download 'mpg123' Windows binaries from 'https://www.mpg123.de/download/' and add to PATH"
       when "darwin"
         message << "\nPlease run 'brew install mpg123'"
       when "linux"
