@@ -51,7 +51,7 @@ Works with Ruby 1.9.2 and higher.
 To use speech synthesis you need to have mpg123 installed.
 
 For Windows:
-Download mpg123 binaries from '' and unzip in 'C:\mpg123'. Add 'C:\mpg123' in your PATH and you are ready to go! 
+Download mpg123 binaries from 'https://www.mpg123.de/download.shtml' and unzip in 'C:\mpg123'. Add 'C:\mpg123' in your PATH and you are ready to go! 
 
 ## Status
 
